@@ -11879,7 +11879,54 @@ textarea.form-control {
     flex-wrap: nowrap;     /* أهم سطر: يمنع النزول لسطر تاني */
     justify-content: space-between;
   }
+  .header {
+ 
+  margin-top: -50px;
+}
 
+.header .overlay .subtitle {
+  font-size: 25px;
+}
+
+.header .overlay .title {
+  font-size: 25px;
+  font-weight: bold;
+}
+  .cd-box{
+    min-width: 0;          /* يلغي أقل عرض */
+    flex: 1;               /* كلهم ياخدوا نفس المساحة */
+  }
+
+  .cd-box span{
+    font-size: 34px;       /* قلل الرقم عشان يسع 4 عناصر */
+  }
+
+  .cd-box small{
+    font-size: 12px;
+    margin-top: 6px;
+  }
+}
+@media (max-width: 425px){
+  .cd-headline{ font-size: 18px; }
+
+  .cd-countdown{
+    gap: 12px;
+    flex-wrap: nowrap;     /* أهم سطر: يمنع النزول لسطر تاني */
+    justify-content: space-between;
+  }
+  .header {
+ 
+  margin-top: -50px;
+}
+
+.header .overlay .subtitle {
+  font-size: 25px;
+}
+
+.header .overlay .title {
+  font-size: 25px;
+  font-weight: bold;
+}
   .cd-box{
     min-width: 0;          /* يلغي أقل عرض */
     flex: 1;               /* كلهم ياخدوا نفس المساحة */
