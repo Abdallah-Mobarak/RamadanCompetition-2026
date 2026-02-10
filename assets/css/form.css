@@ -11915,8 +11915,7 @@ textarea.form-control {
     justify-content: space-between;
   }
   .header {
- 
-  margin-top: -50px;
+  margin-top: 0px;
 }
 
 .header .overlay .subtitle {
