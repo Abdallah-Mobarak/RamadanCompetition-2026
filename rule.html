@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <div class="container" style="margin-top: 20px; text-align: center; ">
+        <div class="rule">
+            <h1>شروط وضوابط المسابقة</h1>
+            <ul style="text-align: right;" dir="rtl">
+                <li>
+                            <h3>يتم التسجيل في المسابقة في مستوى واحد فقط وليس للمتسابق الحق في تعديل المستوى الذي إختاره للتسجيل عليه</h3>
+                </li>
+                <li>   
+                    <h4>يتم إدخال بيانات المتسابق بدقة تامة للحصول على نتيجة أفضل</h4>
+                </li>
+            </ul>
+    <label for="checkbox" style="font-size: 20px; color: green;">اوافق</label>
+    <input type="checkbox" id="redirectCheckbox" name="checkbox" required>
+    </div>
+    </div>
+<script>
+    const checkbox = document.getElementById("redirectCheckbox");
+
+    // لما المستخدم يوافق
+    checkbox.addEventListener("change", function () {
+        if (this.checked) {
+            window.location.href = "https://www.appsheet.com/start/a2a989cb-e357-485e-bcb5-35f81de68690";
+        }
+    });
+
+    // لما الصفحة تتفتح أو نرجع لها
+    window.addEventListener("pageshow", function () {
+        checkbox.checked = false;
+    });
+</script>
+
+</body>
+</html>
